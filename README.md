@@ -10,6 +10,7 @@ This script is not a full algorithmic trading strategy and still requires analys
 #### 1. Identification of Probable Reversion:
 Not all stocks identified by the script will revert, and implementation of ML classification models like scikit-learn, TensorFlow, or other libraries may be able to classify those with the greatest likelihood of reversion. 
 #### 2. Implementation of Trade Cut-off: 
-
+For the script to become an automated, start to finish trading algorithm, we need to implement a cutoff point that will decide when a security is sold. This issue will be discussed more in the applications & use section, but more research and experimentation should be done to determine where cutoff points should be set and what factors go into a reasonable cutoff point.
 ### Installation & Execution
+Execution of the script is as simple as loading the .ipynb file into a python notebook editing software such as Google Colab or Jupyter Notebook, loading the screener file into the environment (or accessing the file from local storage) and running the code. 
 ### Application & Use
