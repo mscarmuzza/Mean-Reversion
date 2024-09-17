@@ -6,5 +6,10 @@ If you'd like to know more about the motivation behind this project and Mean Rev
 ### Script Overview
 The script begins by importing our libraries and loading the current date into a pandas Timestamp variable. We then define three functions, which, fetch stock data from yahoo finance, calculate moving averages, and calculate deviations from each moving average, respectively. We then load our ticker file (found in the repository) into a DataFrame and display its head to get a sense of the data. We briefly clean the data and define a final method, which consolidates the first three and returns a new DataFrame which contains the tickers and deviations for each symbol in the screener file. Finally, we sort the DataFrame to identify the most extreme deviations at a given window and display the head of the DataFrame.
 ### Future Additions
+This script is not a full algorithmic trading strategy and still requires analysis on the part of the trader. Eventually this can be eliminated through the implementation of several items:
+#### 1. Identification of Probable Reversion:
+Not all stocks identified by the script will revert, and implementation of ML classification models like scikit-learn, TensorFlow, or other libraries may be able to classify those with the greatest likelihood of reversion. 
+#### 2. Implementation of Trade Cut-off
+
 ### Installation & Execution
 ### Application & Use
